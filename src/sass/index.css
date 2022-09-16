@@ -1,0 +1,101 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timer__block {
+  width: 200px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.timer__block .time {
+  background-color: #d5e711;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(25, 24, 24);
+  height: 170px;
+  font-size: 95px;
+}
+.timer__block .title {
+  background-color: #d6a30b;
+  color: rgb(25, 24, 24);
+  padding: 5px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  min-width: 900px;
+  margin: 0, auto;
+  margin-top: 150px;
+}
+.btn .button {
+  border: none;
+  background-repeat: 10px;
+  font-size: 18px;
+  padding: 10px;
+  width: 180px;
+  transition: 300s;
+  cursor: pointer;
+}
+.btn .button.start, .btn .button.stop {
+  color: #d5e711;
+}
+.btn .button.start:hover, .btn .button.stop:hover {
+  background-color: #d6a30b;
+  color: white;
+}
+.btn .button.pause:hover {
+  background-color: rgb(28, 55, 208);
+  color: white;
+}
+.btn .button.new.disabled {
+  background-color: none;
+  cursor: not-allowed;
+}
+
+.results__block {
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  width: 300px;
+  border: 2px solid #d5e711;
+  color: mainColor2;
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+}
+.results__block .results__info {
+  margin: 10px 0;
+  font-size: 16px;
+}/*# sourceMappingURL=index.css.map */
